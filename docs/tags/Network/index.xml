@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on Raveh&#39;s</title>
-    <link>http://raveh.net/categories/Linux/</link>
-    <description>Recent content in Linux on Raveh&#39;s</description>
+    <title>Network on Raveh&#39;s</title>
+    <link>http://raveh.net/tags/Network/</link>
+    <description>Recent content in Network on Raveh&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Mar 2020 21:55:00 +0800</lastBuildDate><atom:link href="http://raveh.net/categories/Linux/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>文本处理命令积累</title>
-      <link>http://raveh.net/200305.html</link>
-      <pubDate>Thu, 05 Mar 2020 21:55:00 +0800</pubDate>
-      
-      <guid>http://raveh.net/200305.html</guid>
-      <description>编码转换 iconv file1.txt -f gbk -t utf-8 -c -o file2.txt dos2unix sed -i &#39;s/\r\n/\n/g&#39; file.txt</description>
-    </item>
-    
+    <lastBuildDate>Tue, 03 Mar 2020 21:55:00 +0800</lastBuildDate><atom:link href="http://raveh.net/tags/Network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux安全配置</title>
       <link>http://raveh.net/200303.html</link>
@@ -23,6 +14,15 @@
       
       <guid>http://raveh.net/200303.html</guid>
       <description>生成密钥对 [root@host ~]# ssh-keygen &amp;lt;== 建立密钥对 Generating public/private rsa key pair. Enter file in which to save the key (/root/.ssh/id_rsa): &amp;lt;== 按 Enter Created directory &#39;/root/.ssh&#39;. Enter passphrase (empty for no passphrase): &amp;lt;== 输入密钥锁码，或直接按 Enter 留空 Enter same passphrase again: &amp;lt;== 再输入一遍密钥锁码 Your identification has been saved in /root/.ssh/id_rsa. &amp;lt;== 私钥 Your public key has been saved in /root/.ssh/id_rsa.pub. &amp;lt;== 公钥 The key fingerprint is: 0f:d3:e7:1a:1c:bd:5c:03:f1:19:f1:22:df:9b:cc:08 root@host 目标主机安装密钥 [root@host ~]# cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys [root@host ~]# chmod 600 authorized_keys [root@host ~]# chmod 700 ~/.ssh sshd常用安全设置 [root@host ~]# vi /etc/ssh/sshd_config Port 2222 # 修改端</description>
+    </item>
+    
+    <item>
+      <title>网络命令积累</title>
+      <link>http://raveh.net/200302.html</link>
+      <pubDate>Mon, 02 Mar 2020 21:55:00 +0800</pubDate>
+      
+      <guid>http://raveh.net/200302.html</guid>
+      <description>route 命令 用于多网卡时指定路由。 1#例子1：要显示IP路由表的完整内容： 2route print 3#例子2：要显示IP路由表中以10.开始的路由： 4route print 10.* 5#例子3：要添加默认网关地址为192.168.12.1的默认路由： 6route add 0.0.0.0 mask 0.0.0.0 192.168.12.1 7#例子4：要添加目标为10.41.0.0，子网掩码为255.255.0</description>
     </item>
     
   </channel>
