@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Raveh&#39;s</title>
+    <link>http://raveh.net/post/</link>
+    <description>Recent content in Posts on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 03 Mar 2020 21:55:00 +0800</lastBuildDate><atom:link href="http://raveh.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>折腾Linux</title>
+      <link>http://raveh.net/200303.html</link>
+      <pubDate>Tue, 03 Mar 2020 21:55:00 +0800</pubDate>
+      
+      <guid>http://raveh.net/200303.html</guid>
+      <description>telnet调测socket报文 用于linux上socket调测。 1(echo &amp;#39;1111;2222;3333&amp;#39;;sleep 1)|telnet 127.0.0.1 9090</description>
+    </item>
+    
+    <item>
+      <title>折腾网络</title>
+      <link>http://raveh.net/200302.html</link>
+      <pubDate>Mon, 02 Mar 2020 21:55:00 +0800</pubDate>
+      
+      <guid>http://raveh.net/200302.html</guid>
+      <description>route 命令 用于多网卡时指定路由。 1#例子1：要显示IP路由表的完整内容： 2route print 3#例子2：要显示IP路由表中以10.开始的路由： 4route print 10.* 5#例子3：要添加默认网关地址为192.168.12.1的默认路由： 6route add 0.0.0.0 mask 0.0.0.0 192.168.12.1 7#例子4：要添加目标为10.41.0.0，子网掩码为255.255.0</description>
+    </item>
+    
+    <item>
+      <title>折腾树莓派</title>
+      <link>http://raveh.net/191218.html</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>http://raveh.net/191218.html</guid>
+      <description>树莓派 去年买的树莓派，8GBi版本，安装了pi64的操作系统，没有找到好的64位系统的镜像网站，更新系统和安装软件的速度特别慢，想来想去不知道干什么用，今天把树莓派利用起来了，使用了frp联通了网络,lighttpd,hugo生成静态网页,目前看起来不错。 安装软件： sudo apt install vim git hugo lighttpd</description>
+    </item>
+    
+  </channel>
+</rss>
