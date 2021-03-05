@@ -122,7 +122,7 @@
         </div>
         
         <div class="post-content">
-            telnet调测socket报文 用于linux上socket调测。 1(echo &#39;1111;2222;3333&#39;;sleep 1)|telnet 127.0.0.1 9090……
+            生成密钥对 [root@host ~]# ssh-keygen &lt;== 建立密钥对 Generating public/private rsa key pair. Enter file in which to save the key (/root/.ssh/id_rsa): &lt;== 按 Enter Created directory '/root/.ssh'. Enter passphrase (empty for no passphrase): &lt;== 输入密钥锁码，或直接按 Enter 留空 Enter same passphrase again: &lt;== 再输入一遍密钥锁码 Your identification has been saved in /root/.ssh/id_rsa. &lt;== 私钥 Your public key has been saved in /root/.ssh/id_rsa.pub. &lt;== 公钥 The key fingerprint is: 0f:d3:e7:1a:1c:bd:5c:03:f1:19:f1:22:df:9b:cc:08 root@host 目标主机安装密钥 [root@host ~]# cat id_rsa.pub &gt;&gt; authorized_keys [root@host ~]# chmod 600 authorized_keys [root@host ~]# chmod 700 ~/.ssh sshd常用安全设置 [root@host ~]# vi /etc/ssh/sshd_config Port 2222 # 修改端……
             <p class="readmore"><a href="http://raveh.net/200303.html">阅读全文</a></p>
         </div>
     </article>
