@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>network on Raveh&#39;s</title>
+    <link>http://raveh.net/categories/network/</link>
+    <description>Recent content in network on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 02 Mar 2020 21:55:00 +0800</lastBuildDate><atom:link href="http://raveh.net/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>折腾网络</title>
+      <link>http://raveh.net/200302.html</link>
+      <pubDate>Mon, 02 Mar 2020 21:55:00 +0800</pubDate>
+      
+      <guid>http://raveh.net/200302.html</guid>
+      <description>route 命令 用于多网卡时指定路由。 1#例子1：要显示IP路由表的完整内容： 2route print 3#例子2：要显示IP路由表中以10.开始的路由： 4route print 10.* 5#例子3：要添加默认网关地址为192.168.12.1的默认路由： 6route add 0.0.0.0 mask 0.0.0.0 192.168.12.1 7#例子4：要添加目标为10.41.0.0，子网掩码为255.255.0</description>
+    </item>
+    
+  </channel>
+</rss>

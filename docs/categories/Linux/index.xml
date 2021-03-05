@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Raveh&#39;s</title>
+    <link>http://raveh.net/categories/Linux/</link>
+    <description>Recent content in Linux on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 05 Mar 2020 21:55:00 +0800</lastBuildDate><atom:link href="http://raveh.net/categories/Linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文本处理</title>
+      <link>http://raveh.net/200305.html</link>
+      <pubDate>Thu, 05 Mar 2020 21:55:00 +0800</pubDate>
+      
+      <guid>http://raveh.net/200305.html</guid>
+      <description>编码转换 iconv file1.txt -f gbk -t utf-8 -c -o file2.txt dos2unix sed -i &#39;s/\r\n/\n/g&#39; file.txt</description>
+    </item>
+    
+    <item>
+      <title>折腾Linux</title>
+      <link>http://raveh.net/200303.html</link>
+      <pubDate>Tue, 03 Mar 2020 21:55:00 +0800</pubDate>
+      
+      <guid>http://raveh.net/200303.html</guid>
+      <description>telnet调测socket报文 用于linux上socket调测。 1(echo &amp;#39;1111;2222;3333&amp;#39;;sleep 1)|telnet 127.0.0.1 9090</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry on Raveh&#39;s</title>
+    <link>http://raveh.net/categories/Raspberry/</link>
+    <description>Recent content in Raspberry on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 18 Dec 2019 21:55:00 +0800</lastBuildDate><atom:link href="http://raveh.net/categories/Raspberry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>折腾树莓派</title>
+      <link>http://raveh.net/191218.html</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>http://raveh.net/191218.html</guid>
+      <description>树莓派 去年买的树莓派，8GBi版本，安装了pi64的操作系统，没有找到好的64位系统的镜像网站，更新系统和安装软件的速度特别慢，想来想去不知道干什么用，今天把树莓派利用起来了，使用了frp联通了网络,lighttpd,hugo生成静态网页,目前看起来不错。 安装软件： sudo apt install vim git hugo lighttpd</description>
+    </item>
+    
+  </channel>
+</rss>

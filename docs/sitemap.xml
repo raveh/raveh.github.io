@@ -3,28 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://raveh.net/categories/</loc>
-    <lastmod>2020-03-03T21:55:00+08:00</lastmod>
+    <lastmod>2020-03-05T21:55:00+08:00</lastmod>
+  </url><url>
+    <loc>http://raveh.net/tags/Linux/</loc>
+    <lastmod>2020-03-05T21:55:00+08:00</lastmod>
+  </url><url>
+    <loc>http://raveh.net/categories/Linux/</loc>
+    <lastmod>2020-03-05T21:55:00+08:00</lastmod>
   </url><url>
     <loc>http://raveh.net/post/</loc>
-    <lastmod>2020-03-03T21:55:00+08:00</lastmod>
+    <lastmod>2020-03-05T21:55:00+08:00</lastmod>
   </url><url>
     <loc>http://raveh.net/</loc>
-    <lastmod>2020-03-03T21:55:00+08:00</lastmod>
+    <lastmod>2020-03-05T21:55:00+08:00</lastmod>
   </url><url>
     <loc>http://raveh.net/tags/</loc>
-    <lastmod>2020-03-03T21:55:00+08:00</lastmod>
+    <lastmod>2020-03-05T21:55:00+08:00</lastmod>
+  </url><url>
+    <loc>http://raveh.net/200305.html</loc>
+    <lastmod>2020-03-05T21:55:00+08:00</lastmod>
   </url><url>
     <loc>http://raveh.net/200303.html</loc>
     <lastmod>2020-03-03T21:55:00+08:00</lastmod>
   </url><url>
-    <loc>http://raveh.net/tags/%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-03-03T21:55:00+08:00</lastmod>
+    <loc>http://raveh.net/tags/network/</loc>
+    <lastmod>2020-03-02T21:55:00+08:00</lastmod>
   </url><url>
-    <loc>http://raveh.net/categories/%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-03-03T21:55:00+08:00</lastmod>
+    <loc>http://raveh.net/categories/network/</loc>
+    <lastmod>2020-03-02T21:55:00+08:00</lastmod>
   </url><url>
     <loc>http://raveh.net/200302.html</loc>
     <lastmod>2020-03-02T21:55:00+08:00</lastmod>
+  </url><url>
+    <loc>http://raveh.net/tags/Raspberry/</loc>
+    <lastmod>2019-12-18T21:55:00+08:00</lastmod>
+  </url><url>
+    <loc>http://raveh.net/categories/Raspberry/</loc>
+    <lastmod>2019-12-18T21:55:00+08:00</lastmod>
   </url><url>
     <loc>http://raveh.net/191218.html</loc>
     <lastmod>2019-12-18T21:55:00+08:00</lastmod>

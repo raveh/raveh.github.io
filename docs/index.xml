@@ -6,7 +6,16 @@
     <description>Recent content on Raveh&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 03 Mar 2020 21:55:00 +0800</lastBuildDate><atom:link href="http://raveh.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Mar 2020 21:55:00 +0800</lastBuildDate><atom:link href="http://raveh.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文本处理</title>
+      <link>http://raveh.net/200305.html</link>
+      <pubDate>Thu, 05 Mar 2020 21:55:00 +0800</pubDate>
+      
+      <guid>http://raveh.net/200305.html</guid>
+      <description>编码转换 iconv file1.txt -f gbk -t utf-8 -c -o file2.txt dos2unix sed -i &#39;s/\r\n/\n/g&#39; file.txt</description>
+    </item>
+    
     <item>
       <title>折腾Linux</title>
       <link>http://raveh.net/200303.html</link>
