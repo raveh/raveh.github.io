@@ -1,2 +1,1 @@
-#Raveh's
-这是写博客的地方。
+[https://raveh.net](https://raveh.net)
