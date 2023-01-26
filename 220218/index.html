@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Windows编译Aseprite软件 - Raveh&#39;s</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Raveh" /><meta name="description" content="Aseprite是一个像素画图工具，从基本的绘制到动画制作功能一应俱全，官网卖19.99＄，Steam版本折后45￥。不过这款软件是开源软件" /><meta name="keywords" content="Raveh&#39;s Blog, Raveh&#39;s, Raveh" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="/220218/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.88393b95c3c47d62a367c7e881d01c52bb47bc60839b36f2d57e03c1a7f98281.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Windows编译Aseprite软件" />
+<meta property="og:description" content="Aseprite是一个像素画图工具，从基本的绘制到动画制作功能一应俱全，官网卖19.99＄，Steam版本折后45￥。不过这款软件是开源软件" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/220218/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-18T05:24:58+00:00" />
+<meta property="article:modified_time" content="2022-02-18T05:24:58+00:00" />
+
+<meta itemprop="name" content="Windows编译Aseprite软件">
+<meta itemprop="description" content="Aseprite是一个像素画图工具，从基本的绘制到动画制作功能一应俱全，官网卖19.99＄，Steam版本折后45￥。不过这款软件是开源软件"><meta itemprop="datePublished" content="2022-02-18T05:24:58+00:00" />
+<meta itemprop="dateModified" content="2022-02-18T05:24:58+00:00" />
+<meta itemprop="wordCount" content="939">
+<meta itemprop="keywords" content="Aseprite," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Windows编译Aseprite软件"/>
+<meta name="twitter:description" content="Aseprite是一个像素画图工具，从基本的绘制到动画制作功能一应俱全，官网卖19.99＄，Steam版本折后45￥。不过这款软件是开源软件"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Raveh&#39;s</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/mud/">
+        <li class="mobile-menu-item">Mud</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Raveh&#39;s</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/mud/">Mud</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Windows编译Aseprite软件</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-02-18 </span>
+        <div class="post-category">
+            <a href="/categories/%E7%94%9F%E6%B4%BB/%E9%9A%8F%E7%AC%94/"> 生活/随笔 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#准备工具">准备工具</a></li>
+        <li><a href="#操作步骤">操作步骤</a></li>
+        <li><a href="#常用快捷键">常用快捷键</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>Aseprite是一个像素画图工具，从基本的绘制到动画制作功能一应俱全，官网卖19.99＄，Steam版本折后45￥。不过这款软件是开源软件，根据软件的<a href="https://github.com/aseprite/aseprite/blob/master/EULA.txt">用户协议</a>，如果你只是个人使用，完全可以从源码编译<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>后免费使用，产出的内容也可以用于商业，但是不允许将自己编译的aseprite分发给第三方，商业使用或者用这款软件赚到钱后，建议入一份正版。🐶</p>
+<h2 id="准备工具">准备工具</h2>
+<ul>
+<li>首先安装<a href="https://visualstudio.microsoft.com/zh-hans/free-developer-offers/">Visual Studio Community</a> 2022版本，选择&quot;使用C++的桌面开发&quot;。</li>
+<li>从<a href="https://github.com/aseprite/aseprite/releases">github aseprite releases</a>页面下载最新的Aseprite源码。</li>
+<li>下载<a href="https://cmake.org/download/">CMake</a>选择<code>Win64-X64</code>版本。</li>
+<li>下载<a href="https://github.com/ninja-build/ninja/releases">Ninja</a>选择<code>ninja-win.zip</code>。</li>
+<li>下载<a href="https://github.com/aseprite/skia/releases">Skia</a>选择<code>Skia-Windows-Release-x64.zip</code>。</li>
+</ul>
+<h2 id="操作步骤">操作步骤</h2>
+<ul>
+<li>将下载的源码以及各种工具解压缩。</li>
+<li>在解压好的源码包路径下新建<code>build.bat</code>构建脚本，按自己的路径调整脚本内容
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">set</span> <span class="nv">skiadir</span><span class="p">=</span>D:\workspace\cpp\aseprite\Skia-Windows-Release-x64
+<span class="k">set</span> <span class="nv">cmakedir</span><span class="p">=</span>D:\workspace\cpp\aseprite\cmake-3.22.1-Win64-X64
+<span class="k">set</span> <span class="nv">ninjadir</span><span class="p">=</span>D:\workspace\cpp\aseprite\ninja-win
+<span class="k">mkdir</span> build64
+<span class="k">cd</span> build64
+<span class="k">call</span> <span class="s2">&#34;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\VsDevCmd.bat&#34;</span> -arch=x64
+<span class="nv">%cmakedir%</span>\bin\cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo <span class="se">^
+</span><span class="se"> </span>   -DLAF_BACKEND=skia <span class="se">^
+</span><span class="se"> </span>   -DSKIA_DIR=<span class="nv">%skiadir%</span> <span class="se">^
+</span><span class="se"> </span>   -DSKIA_LIBRARY_DIR=<span class="nv">%skiadir%</span>\out\Release-x64 <span class="se">^
+</span><span class="se"> </span>   -DSKIA_LIBRARY=<span class="nv">%skiadir%</span>\out\Release-x64\skia.lib <span class="se">^
+</span><span class="se"> </span>   -G Ninja ..
+<span class="nv">%ninjadir%</span>\ninja aseprite
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>执行<code>build.bat</code>即可正常编译，根据电脑性能不同大概十分钟左右编译完成，在aseprite源码<code>build64/bin</code>目录下就能找见编译好的<code>aseprite.exe</code>和<code>data</code>目录。</li>
+</ul>
+<h2 id="常用快捷键">常用快捷键</h2>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H/Space     </td>
+<td>     抓手工具</td>
+</tr>
+<tr>
+<td>M     </td>
+<td>     矩形选区工具</td>
+</tr>
+<tr>
+<td>Shift + M     </td>
+<td>     椭圆选区工具</td>
+</tr>
+<tr>
+<td>Q     </td>
+<td>     套索选区工具</td>
+</tr>
+<tr>
+<td>Shift + Q     </td>
+<td>     多边形套索选区工具</td>
+</tr>
+<tr>
+<td>W     </td>
+<td>     魔棒选区工具</td>
+</tr>
+<tr>
+<td>Ctrl + A     </td>
+<td>     全选选区</td>
+</tr>
+<tr>
+<td>Ctrl + D     </td>
+<td>     取消选区</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + D     </td>
+<td>     重新选区</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + I      </td>
+<td>     反向选区</td>
+</tr>
+<tr>
+<td>B     </td>
+<td>     铅笔</td>
+</tr>
+<tr>
+<td>Shift + B     </td>
+<td>     喷雾工具</td>
+</tr>
+<tr>
+<td>E     </td>
+<td>     橡皮擦工具</td>
+</tr>
+<tr>
+<td>I 或 按住Alt键     </td>
+<td>     吸管工具</td>
+</tr>
+<tr>
+<td>Z 或 鼠标滚轮     </td>
+<td>     缩放工具</td>
+</tr>
+<tr>
+<td>V     </td>
+<td>     移动工具</td>
+</tr>
+<tr>
+<td>Shift + C     </td>
+<td>     切片工具</td>
+</tr>
+<tr>
+<td>G     </td>
+<td>     油漆桶工具</td>
+</tr>
+<tr>
+<td>Shift + G     </td>
+<td>     渐变工具</td>
+</tr>
+<tr>
+<td>L     </td>
+<td>     直线绘制工具</td>
+</tr>
+<tr>
+<td>Shift + L     </td>
+<td>     曲线绘制工具</td>
+</tr>
+<tr>
+<td>U     </td>
+<td>     矩形绘制工具、矩形绘制填充工具（再次点击实现切换）</td>
+</tr>
+<tr>
+<td>Shift + U     </td>
+<td>     椭圆绘制工具、椭圆绘制填充工具（再次点击实现切换）</td>
+</tr>
+<tr>
+<td>D     </td>
+<td>     围边填充工具</td>
+</tr>
+<tr>
+<td>Shift + D     </td>
+<td>     多边形填充工具</td>
+</tr>
+<tr>
+<td>R     </td>
+<td>     模糊工具、混乱工具（再次点击实现切换）</td>
+</tr>
+<tr>
+<td>C     </td>
+<td>     修改画布大小</td>
+</tr>
+<tr>
+<td>Shift + R     </td>
+<td>     替换颜色</td>
+</tr>
+<tr>
+<td>Ctrl + U     </td>
+<td>     色相饱和度调整</td>
+</tr>
+<tr>
+<td>Ctrl + Z     </td>
+<td>    撤销、回到上一步</td>
+</tr>
+<tr>
+<td>Ctrl + Y      </td>
+<td>     撤销、回到下一步</td>
+</tr>
+<tr>
+<td>Ctrl + X     </td>
+<td>     剪贴</td>
+</tr>
+<tr>
+<td>Ctrl + C     </td>
+<td>     复制</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + C     </td>
+<td>     复制合并</td>
+</tr>
+<tr>
+<td>Ctrl + V     </td>
+<td>     粘贴</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + V     </td>
+<td>     粘贴为新图层</td>
+</tr>
+<tr>
+<td>Del      </td>
+<td>     删除</td>
+</tr>
+<tr>
+<td>Shift + H     </td>
+<td>     水平翻转</td>
+</tr>
+<tr>
+<td>Shift + V     </td>
+<td>     垂直翻转</td>
+</tr>
+<tr>
+<td>Ctrl + T     </td>
+<td>     变形</td>
+</tr>
+<tr>
+<td>Ctrl + P     </td>
+<td>     图片属性查看</td>
+</tr>
+</tbody>
+</table>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>参考：<a href="https://github.com/aseprite/aseprite/blob/master/INSTALL.md">Aseprite官方编译指导</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Raveh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-02-18
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/aseprite/">Aseprite</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/220219/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">博客迁移到Hugo</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/200320/">
+            <span class="next-text nav-default">多网卡配置</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2007 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Raveh</span>
+  </span>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2e5c263af708c5658baf1e77f0cc0189";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

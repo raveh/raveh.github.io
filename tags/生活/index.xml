@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生活 on Raveh&#39;s</title>
+    <link>/tags/%E7%94%9F%E6%B4%BB/</link>
+    <description>Recent content in 生活 on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Dec 2022 12:31:29 +0800</lastBuildDate><atom:link href="/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>221212</title>
+      <link>/221212/</link>
+      <pubDate>Mon, 12 Dec 2022 12:31:29 +0800</pubDate>
+      
+      <guid>/221212/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>感染新冠记录</title>
+      <link>/221113/</link>
+      <pubDate>Sun, 13 Nov 2022 19:15:41 +0800</pubDate>
+      
+      <guid>/221113/</guid>
+      <description>11/1日 嗓子痒，浑身困乏，晚上发烧，浑身酸痛到睡不着觉，核酸异常。 11/2日 重感冒症状，冷，浑身酸痛，核酸异常。 11/3日 症状开始减轻，核</description>
+    </item>
+    
+    <item>
+      <title>Mir</title>
+      <link>/mir/</link>
+      <pubDate>Sat, 12 Nov 2022 23:49:36 +0800</pubDate>
+      
+      <guid>/mir/</guid>
+      <description>暂时不提供任何服务..</description>
+    </item>
+    
+    <item>
+      <title>fluffos v2017 armbian64编译</title>
+      <link>/221020/</link>
+      <pubDate>Thu, 20 Oct 2022 12:51:46 +0800</pubDate>
+      
+      <guid>/221020/</guid>
+      <description>fluffos v2017整体编译参考官方的编译教程，在64位操作系统下编译时会报 1 2 3 4 5 packages/async/async.cc:300:22: error: ‘SYS_getdents’ was not declared in this scope; did you mean ‘SYS_g</description>
+    </item>
+    
+    <item>
+      <title>五灯会元</title>
+      <link>/220902/</link>
+      <pubDate>Fri, 02 Sep 2022 18:43:38 +0800</pubDate>
+      
+      <guid>/220902/</guid>
+      <description>举：“世尊初生下，一手指天，一手指地，周行七步，目顾四方。云：天上天下，唯我独尊。” 云门禅师曰：“我当时若见，一棒打杀与狗子吃却，贵图天下太</description>
+    </item>
+    
+    <item>
+      <title>胡言乱语不知所云</title>
+      <link>/220806/</link>
+      <pubDate>Sat, 06 Aug 2022 12:15:29 +0800</pubDate>
+      
+      <guid>/220806/</guid>
+      <description>时常会想工作的意义到底是什么，好吧，是为了钱，是为了生活更体面些，从开始工作至今在几个公司里面待过，非常不幸的是这几家公司里面都有严重的加班</description>
+    </item>
+    
+    <item>
+      <title>汉乐府·古歌</title>
+      <link>/220626/</link>
+      <pubDate>Sun, 26 Jun 2022 12:28:46 +0100</pubDate>
+      
+      <guid>/220626/</guid>
+      <description>古歌 秋风萧萧愁杀人，出亦愁，入亦愁。座中何人，谁不怀忧？ 令我白头。胡地多飙风，树木何修修。 离家日趋远，衣带日趋缓。心思不能言，肠中车轮转。 古</description>
+    </item>
+    
+    <item>
+      <title>博客迁移到Hugo</title>
+      <link>/220219/</link>
+      <pubDate>Sat, 19 Feb 2022 10:02:39 +0000</pubDate>
+      
+      <guid>/220219/</guid>
+      <description>很久之前，当时还经常出差的时候，维护了一个博客在红帽OpenShift上，最近几年生活、工作压力渐大，很久没有去记录思考自己的生活了。今天把</description>
+    </item>
+    
+    <item>
+      <title>水上乐园的鸭子</title>
+      <link>/150711/</link>
+      <pubDate>Sat, 11 Jul 2015 19:23:42 +0000</pubDate>
+      
+      <guid>/150711/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>东山岛</title>
+      <link>/140726/</link>
+      <pubDate>Sat, 26 Jul 2014 19:23:42 +0000</pubDate>
+      
+      <guid>/140726/</guid>
+      <description>东山岛 长期生活在内陆城市，好不容易见次大海，真的很美！</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on Raveh&#39;s</title>
+    <link>/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Aug 2022 12:43:22 +0800</lastBuildDate><atom:link href="/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git笔记</title>
+      <link>/220809/</link>
+      <pubDate>Tue, 09 Aug 2022 12:43:22 +0800</pubDate>
+      
+      <guid>/220809/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 # 克隆项目到本地 git clone 项目地址 # checkout到develop分支 git checkout develop # 添加变更 git add * # 提交到本地 git commit -m &amp;#34</description>
+    </item>
+    
+  </channel>
+</rss>

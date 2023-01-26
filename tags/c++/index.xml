@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Raveh&#39;s</title>
+    <link>/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 13 Oct 2022 12:31:17 +0800</lastBuildDate><atom:link href="/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>贪吃蛇</title>
+      <link>/221013/</link>
+      <pubDate>Thu, 13 Oct 2022 12:31:17 +0800</pubDate>
+      
+      <guid>/221013/</guid>
+      <description>国庆期间看了raylib绘图库，打算用这个库写几个复古小游戏，这是第一个贪吃蛇(不支持XP，支持win7以上操作系统)。 代码如下： 1 2 3 4 5</description>
+    </item>
+    
+    <item>
+      <title>左值右值</title>
+      <link>/220805/</link>
+      <pubDate>Fri, 05 Aug 2022 13:48:33 +0800</pubDate>
+      
+      <guid>/220805/</guid>
+      <description>众所周知C++11新增了右值引用，谈右值引用我们也可以扩展一些相关概念： 左值 右值 纯右值 将亡值 左值引用 右值引用 移动语义 完美转发 返回值优化 我们下</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;信号处理</title>
+      <link>/220224/</link>
+      <pubDate>Thu, 24 Feb 2022 14:37:45 +0000</pubDate>
+      
+      <guid>/220224/</guid>
+      <description>信号是由操作系统传给进程的中断，会提早终止一个程序。在 LINUX 或 Windows 系统上，可以通过按 Ctrl+C 产生中断。有些信号不能被程序捕获，但是下表所列信号可以在程序</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;函数的值传递、指针传递、引用传递</title>
+      <link>/220222/</link>
+      <pubDate>Tue, 22 Feb 2022 08:26:44 +0000</pubDate>
+      
+      <guid>/220222/</guid>
+      <description>函数的三种参数 值传递 形参是实参的拷贝，改变形参的值并不会影响外部实参的值。从被调用函数的角度来说，值传递是单向的（实参-&amp;gt;形参），参数</description>
+    </item>
+    
+    <item>
+      <title>C/C&#43;&#43;内存分配方式与存储区</title>
+      <link>/220221/</link>
+      <pubDate>Mon, 21 Feb 2022 18:26:42 +0000</pubDate>
+      
+      <guid>/220221/</guid>
+      <description>三种内存分配方式 从静态存储区域分配。内存在程序编译的时候就已经分配好，这块内存在程序的整个运行期间都存在。例如全局变量，static变量。 在</description>
+    </item>
+    
+    <item>
+      <title>学习C&#43;&#43;/Cherno笔记</title>
+      <link>/220220/</link>
+      <pubDate>Sun, 20 Feb 2022 10:02:39 +0000</pubDate>
+      
+      <guid>/220220/</guid>
+      <description>最近开始看Cherno的C++视频，受益匪浅，记录下笔记： No.1 vs有两种默认运行方式，debug或release，其中在项目的C++属性栏中，</description>
+    </item>
+    
+  </channel>
+</rss>

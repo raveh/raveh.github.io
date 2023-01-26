@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raveh&#39;s</title>
+    <link>/</link>
+    <description>Recent content on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Dec 2022 12:31:29 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>/about/</guid>
+      <description>关于✨ 程序员，如果需要联系我，请邮件至 echo &amp;quot;cmF2ZWhAbGl2ZS5jbg==&amp;quot;|base64 -d 。 一些好玩的个人博客🌟 阮一峰，大佬，技术文章写的简明易懂。 林海草原，愿我经历的苦难你不要经历，愿</description>
+    </item>
+    
+    <item>
+      <title>宝藏分享</title>
+      <link>/m2/</link>
+      <pubDate>Wed, 27 Feb 2222 04:35:37 +0000</pubDate>
+      
+      <guid>/m2/</guid>
+      <description>恭喜你找到了宝藏，最新版本分享： 传奇 提取码:dyAY 奇迹 提取码:5REt 魔兽 提取码:duui</description>
+    </item>
+    
+    <item>
+      <title>221212</title>
+      <link>/221212/</link>
+      <pubDate>Mon, 12 Dec 2022 12:31:29 +0800</pubDate>
+      
+      <guid>/221212/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>感染新冠记录</title>
+      <link>/221113/</link>
+      <pubDate>Sun, 13 Nov 2022 19:15:41 +0800</pubDate>
+      
+      <guid>/221113/</guid>
+      <description>11/1日 嗓子痒，浑身困乏，晚上发烧，浑身酸痛到睡不着觉，核酸异常。 11/2日 重感冒症状，冷，浑身酸痛，核酸异常。 11/3日 症状开始减轻，核</description>
+    </item>
+    
+    <item>
+      <title>Mir</title>
+      <link>/mir/</link>
+      <pubDate>Sat, 12 Nov 2022 23:49:36 +0800</pubDate>
+      
+      <guid>/mir/</guid>
+      <description>暂时不提供任何服务..</description>
+    </item>
+    
+    <item>
+      <title>Linux的一些安全设置</title>
+      <link>/221030/</link>
+      <pubDate>Sun, 30 Oct 2022 23:15:09 +0800</pubDate>
+      
+      <guid>/221030/</guid>
+      <description>用户相关 1 2 3 4 5 6 7 8 9 10 11 # 新增用户(+sudo权限) useradd -m webdev usermod -aG sudo webdev # 修改sshd配置 vi /etc/ssh/sshd_config Port 12345 # 修改成一个别人猜不到的 PermitRootLogin no # 禁止root</description>
+    </item>
+    
+    <item>
+      <title>泥潭</title>
+      <link>/mud/</link>
+      <pubDate>Thu, 20 Oct 2022 13:23:45 +0800</pubDate>
+      
+      <guid>/mud/</guid>
+      <description>架了一个武侠类MUD服务器，欢迎大家一起来玩：进入游戏，手动配置： 1 2 3 4 5 6 7 版本：笑傲江湖 地址: 139.155.81.246 (mud.raveh.net) 端口：6666 编码：UTF-8 端口：</description>
+    </item>
+    
+    <item>
+      <title>fluffos v2017 armbian64编译</title>
+      <link>/221020/</link>
+      <pubDate>Thu, 20 Oct 2022 12:51:46 +0800</pubDate>
+      
+      <guid>/221020/</guid>
+      <description>fluffos v2017整体编译参考官方的编译教程，在64位操作系统下编译时会报 1 2 3 4 5 packages/async/async.cc:300:22: error: ‘SYS_getdents’ was not declared in this scope; did you mean ‘SYS_g</description>
+    </item>
+    
+    <item>
+      <title>贪吃蛇</title>
+      <link>/221013/</link>
+      <pubDate>Thu, 13 Oct 2022 12:31:17 +0800</pubDate>
+      
+      <guid>/221013/</guid>
+      <description>国庆期间看了raylib绘图库，打算用这个库写几个复古小游戏，这是第一个贪吃蛇(不支持XP，支持win7以上操作系统)。 代码如下： 1 2 3 4 5</description>
+    </item>
+    
+    <item>
+      <title>五灯会元</title>
+      <link>/220902/</link>
+      <pubDate>Fri, 02 Sep 2022 18:43:38 +0800</pubDate>
+      
+      <guid>/220902/</guid>
+      <description>举：“世尊初生下，一手指天，一手指地，周行七步，目顾四方。云：天上天下，唯我独尊。” 云门禅师曰：“我当时若见，一棒打杀与狗子吃却，贵图天下太</description>
+    </item>
+    
+    <item>
+      <title>Git笔记</title>
+      <link>/220809/</link>
+      <pubDate>Tue, 09 Aug 2022 12:43:22 +0800</pubDate>
+      
+      <guid>/220809/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 # 克隆项目到本地 git clone 项目地址 # checkout到develop分支 git checkout develop # 添加变更 git add * # 提交到本地 git commit -m &amp;#34</description>
+    </item>
+    
+    <item>
+      <title>胡言乱语不知所云</title>
+      <link>/220806/</link>
+      <pubDate>Sat, 06 Aug 2022 12:15:29 +0800</pubDate>
+      
+      <guid>/220806/</guid>
+      <description>时常会想工作的意义到底是什么，好吧，是为了钱，是为了生活更体面些，从开始工作至今在几个公司里面待过，非常不幸的是这几家公司里面都有严重的加班</description>
+    </item>
+    
+    <item>
+      <title>左值右值</title>
+      <link>/220805/</link>
+      <pubDate>Fri, 05 Aug 2022 13:48:33 +0800</pubDate>
+      
+      <guid>/220805/</guid>
+      <description>众所周知C++11新增了右值引用，谈右值引用我们也可以扩展一些相关概念： 左值 右值 纯右值 将亡值 左值引用 右值引用 移动语义 完美转发 返回值优化 我们下</description>
+    </item>
+    
+    <item>
+      <title>结构体位域</title>
+      <link>/220723/</link>
+      <pubDate>Sat, 23 Jul 2022 04:03:25 +0100</pubDate>
+      
+      <guid>/220723/</guid>
+      <description>C或C++允许在结构体中以位为单位设置成员所占的内存空间，以位为单位的结构体成员，简称为位域或位段(Bit field)。位域的优点是节省空间</description>
+    </item>
+    
+    <item>
+      <title>汉乐府·古歌</title>
+      <link>/220626/</link>
+      <pubDate>Sun, 26 Jun 2022 12:28:46 +0100</pubDate>
+      
+      <guid>/220626/</guid>
+      <description>古歌 秋风萧萧愁杀人，出亦愁，入亦愁。座中何人，谁不怀忧？ 令我白头。胡地多飙风，树木何修修。 离家日趋远，衣带日趋缓。心思不能言，肠中车轮转。 古</description>
+    </item>
+    
+    <item>
+      <title>一元二次函数</title>
+      <link>/220410/</link>
+      <pubDate>Sun, 10 Apr 2022 02:53:28 +0100</pubDate>
+      
+      <guid>/220410/</guid>
+      <description>基本定义 一般表达式 $ y = ax^2 + bx + c $ (a≠0)其中a为二次项系数，b为一次项系数，c为常数项，x为自变量，y为因变量。等号右边自变量的最高次</description>
+    </item>
+    
+    <item>
+      <title>二叉树练习</title>
+      <link>/220409/</link>
+      <pubDate>Sat, 09 Apr 2022 02:42:22 +0100</pubDate>
+      
+      <guid>/220409/</guid>
+      <description>主要是遍历，二叉搜索树的基础。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55</description>
+    </item>
+    
+    <item>
+      <title>单链表练习</title>
+      <link>/220408/</link>
+      <pubDate>Fri, 08 Apr 2022 02:36:35 +0100</pubDate>
+      
+      <guid>/220408/</guid>
+      <description>直接贴代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64</description>
+    </item>
+    
+    <item>
+      <title>C结构体定义</title>
+      <link>/220305/</link>
+      <pubDate>Sat, 05 Mar 2022 02:06:46 +0000</pubDate>
+      
+      <guid>/220305/</guid>
+      <description>平常看C语言的程序时，见到结构体定义有些是使用typedef定义，有些是直接使用struct定义，感觉有点混乱，其实简单梳理下就很清楚了。 使</description>
+    </item>
+    
+    <item>
+      <title>C函数指针</title>
+      <link>/220303/</link>
+      <pubDate>Thu, 03 Mar 2022 04:06:02 +0000</pubDate>
+      
+      <guid>/220303/</guid>
+      <description>在C语言中，函数存放在内存的代码区，跟基本的数据类型或者数组一样，也有一个内存的起始位置。函数的类型由其参数以及返回类型共同决定，跟函数名无</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;信号处理</title>
+      <link>/220224/</link>
+      <pubDate>Thu, 24 Feb 2022 14:37:45 +0000</pubDate>
+      
+      <guid>/220224/</guid>
+      <description>信号是由操作系统传给进程的中断，会提早终止一个程序。在 LINUX 或 Windows 系统上，可以通过按 Ctrl+C 产生中断。有些信号不能被程序捕获，但是下表所列信号可以在程序</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;函数的值传递、指针传递、引用传递</title>
+      <link>/220222/</link>
+      <pubDate>Tue, 22 Feb 2022 08:26:44 +0000</pubDate>
+      
+      <guid>/220222/</guid>
+      <description>函数的三种参数 值传递 形参是实参的拷贝，改变形参的值并不会影响外部实参的值。从被调用函数的角度来说，值传递是单向的（实参-&amp;gt;形参），参数</description>
+    </item>
+    
+    <item>
+      <title>C/C&#43;&#43;内存分配方式与存储区</title>
+      <link>/220221/</link>
+      <pubDate>Mon, 21 Feb 2022 18:26:42 +0000</pubDate>
+      
+      <guid>/220221/</guid>
+      <description>三种内存分配方式 从静态存储区域分配。内存在程序编译的时候就已经分配好，这块内存在程序的整个运行期间都存在。例如全局变量，static变量。 在</description>
+    </item>
+    
+    <item>
+      <title>学习C&#43;&#43;/Cherno笔记</title>
+      <link>/220220/</link>
+      <pubDate>Sun, 20 Feb 2022 10:02:39 +0000</pubDate>
+      
+      <guid>/220220/</guid>
+      <description>最近开始看Cherno的C++视频，受益匪浅，记录下笔记： No.1 vs有两种默认运行方式，debug或release，其中在项目的C++属性栏中，</description>
+    </item>
+    
+    <item>
+      <title>博客迁移到Hugo</title>
+      <link>/220219/</link>
+      <pubDate>Sat, 19 Feb 2022 10:02:39 +0000</pubDate>
+      
+      <guid>/220219/</guid>
+      <description>很久之前，当时还经常出差的时候，维护了一个博客在红帽OpenShift上，最近几年生活、工作压力渐大，很久没有去记录思考自己的生活了。今天把</description>
+    </item>
+    
+    <item>
+      <title>Windows编译Aseprite软件</title>
+      <link>/220218/</link>
+      <pubDate>Fri, 18 Feb 2022 05:24:58 +0000</pubDate>
+      
+      <guid>/220218/</guid>
+      <description>Aseprite是一个像素画图工具，从基本的绘制到动画制作功能一应俱全，官网卖19.99＄，Steam版本折后45￥。不过这款软件是开源软件</description>
+    </item>
+    
+    <item>
+      <title>多网卡配置</title>
+      <link>/200320/</link>
+      <pubDate>Fri, 20 Mar 2020 12:02:48 +0000</pubDate>
+      
+      <guid>/200320/</guid>
+      <description>Windows多网卡路由配置常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #例子1：要显示IP路由表的完整内容 route print #例子2：要显示IP路由</description>
+    </item>
+    
+    <item>
+      <title>SSH链接管理脚本</title>
+      <link>/200318/</link>
+      <pubDate>Wed, 18 Mar 2020 02:13:30 +0000</pubDate>
+      
+      <guid>/200318/</guid>
+      <description>平常维护linux机器比较多，很多时候都要临时通过SSH登上去，执行一些命令什么的，写了一个Bash Shell脚本管理这些链接，有需要的可以</description>
+    </item>
+    
+    <item>
+      <title>水上乐园的鸭子</title>
+      <link>/150711/</link>
+      <pubDate>Sat, 11 Jul 2015 19:23:42 +0000</pubDate>
+      
+      <guid>/150711/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>东山岛</title>
+      <link>/140726/</link>
+      <pubDate>Sat, 26 Jul 2014 19:23:42 +0000</pubDate>
+      
+      <guid>/140726/</guid>
+      <description>东山岛 长期生活在内陆城市，好不容易见次大海，真的很美！</description>
+    </item>
+    
+  </channel>
+</rss>

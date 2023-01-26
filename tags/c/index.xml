@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on Raveh&#39;s</title>
+    <link>/tags/c/</link>
+    <description>Recent content in C on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 23 Jul 2022 04:03:25 +0100</lastBuildDate><atom:link href="/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>结构体位域</title>
+      <link>/220723/</link>
+      <pubDate>Sat, 23 Jul 2022 04:03:25 +0100</pubDate>
+      
+      <guid>/220723/</guid>
+      <description>C或C++允许在结构体中以位为单位设置成员所占的内存空间，以位为单位的结构体成员，简称为位域或位段(Bit field)。位域的优点是节省空间</description>
+    </item>
+    
+    <item>
+      <title>二叉树练习</title>
+      <link>/220409/</link>
+      <pubDate>Sat, 09 Apr 2022 02:42:22 +0100</pubDate>
+      
+      <guid>/220409/</guid>
+      <description>主要是遍历，二叉搜索树的基础。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55</description>
+    </item>
+    
+    <item>
+      <title>单链表练习</title>
+      <link>/220408/</link>
+      <pubDate>Fri, 08 Apr 2022 02:36:35 +0100</pubDate>
+      
+      <guid>/220408/</guid>
+      <description>直接贴代码： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64</description>
+    </item>
+    
+    <item>
+      <title>C结构体定义</title>
+      <link>/220305/</link>
+      <pubDate>Sat, 05 Mar 2022 02:06:46 +0000</pubDate>
+      
+      <guid>/220305/</guid>
+      <description>平常看C语言的程序时，见到结构体定义有些是使用typedef定义，有些是直接使用struct定义，感觉有点混乱，其实简单梳理下就很清楚了。 使</description>
+    </item>
+    
+    <item>
+      <title>C函数指针</title>
+      <link>/220303/</link>
+      <pubDate>Thu, 03 Mar 2022 04:06:02 +0000</pubDate>
+      
+      <guid>/220303/</guid>
+      <description>在C语言中，函数存放在内存的代码区，跟基本的数据类型或者数组一样，也有一个内存的起始位置。函数的类型由其参数以及返回类型共同决定，跟函数名无</description>
+    </item>
+    
+  </channel>
+</rss>

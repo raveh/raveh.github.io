@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on Raveh&#39;s</title>
+    <link>/tags/bash/</link>
+    <description>Recent content in Bash on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Mar 2020 02:13:30 +0000</lastBuildDate><atom:link href="/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH链接管理脚本</title>
+      <link>/200318/</link>
+      <pubDate>Wed, 18 Mar 2020 02:13:30 +0000</pubDate>
+      
+      <guid>/200318/</guid>
+      <description>平常维护linux机器比较多，很多时候都要临时通过SSH登上去，执行一些命令什么的，写了一个Bash Shell脚本管理这些链接，有需要的可以</description>
+    </item>
+    
+  </channel>
+</rss>

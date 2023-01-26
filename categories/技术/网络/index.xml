@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术/网络 on Raveh&#39;s</title>
+    <link>/categories/%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content in 技术/网络 on Raveh&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/categories/%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多网卡配置</title>
+      <link>/200320/</link>
+      <pubDate>Fri, 20 Mar 2020 12:02:48 +0000</pubDate>
+      
+      <guid>/200320/</guid>
+      <description>Windows多网卡路由配置常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #例子1：要显示IP路由表的完整内容 route print #例子2：要显示IP路由</description>
+    </item>
+    
+  </channel>
+</rss>

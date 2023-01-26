@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>学习C&#43;&#43;/Cherno笔记 - Raveh&#39;s</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Raveh" /><meta name="description" content="最近开始看Cherno的C&#43;&#43;视频，受益匪浅，记录下笔记： No.1 vs有两种默认运行方式，debug或release，其中在项目的C&#43;&#43;属性栏中，" /><meta name="keywords" content="Raveh&#39;s Blog, Raveh&#39;s, Raveh" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2 with theme even" />
+
+
+<link rel="canonical" href="/220220/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.88393b95c3c47d62a367c7e881d01c52bb47bc60839b36f2d57e03c1a7f98281.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="学习C&#43;&#43;/Cherno笔记" />
+<meta property="og:description" content="最近开始看Cherno的C&#43;&#43;视频，受益匪浅，记录下笔记： No.1 vs有两种默认运行方式，debug或release，其中在项目的C&#43;&#43;属性栏中，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/220220/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-20T10:02:39+00:00" />
+<meta property="article:modified_time" content="2022-02-20T10:02:39+00:00" />
+
+<meta itemprop="name" content="学习C&#43;&#43;/Cherno笔记">
+<meta itemprop="description" content="最近开始看Cherno的C&#43;&#43;视频，受益匪浅，记录下笔记： No.1 vs有两种默认运行方式，debug或release，其中在项目的C&#43;&#43;属性栏中，"><meta itemprop="datePublished" content="2022-02-20T10:02:39+00:00" />
+<meta itemprop="dateModified" content="2022-02-20T10:02:39+00:00" />
+<meta itemprop="wordCount" content="1874">
+<meta itemprop="keywords" content="技术,C&#43;&#43;," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="学习C&#43;&#43;/Cherno笔记"/>
+<meta name="twitter:description" content="最近开始看Cherno的C&#43;&#43;视频，受益匪浅，记录下笔记： No.1 vs有两种默认运行方式，debug或release，其中在项目的C&#43;&#43;属性栏中，"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Raveh&#39;s</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/mud/">
+        <li class="mobile-menu-item">Mud</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Raveh&#39;s</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/mud/">Mud</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">学习C&#43;&#43;/Cherno笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-02-20 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF/c&#43;&#43;/"> 技术/C&#43;&#43; </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#no1">No.1</a></li>
+            <li><a href="#no2">No.2</a></li>
+            <li><a href="#no3">No.3</a></li>
+            <li><a href="#no4">No.4</a></li>
+            <li><a href="#no5">No.5</a></li>
+            <li><a href="#no6">No.6</a></li>
+            <li><a href="#no7">No.7</a></li>
+            <li><a href="#no8">No.8</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>最近开始看Cherno的C++视频，受益匪浅，记录下笔记：</p>
+<h3 id="no1">No.1</h3>
+<p>vs有两种默认运行方式，debug或release，其中在项目的C++属性栏中，debug模式下里面的Optimization是默认关闭的，而release模式是默认开启的，Optimization会自行简化一些操作，加速程序运行，但是不适合Debug。</p>
+<h3 id="no2">No.2</h3>
+<p>头文件是在预处理阶段编译的，实际编译时，Compiler编译的只有cpp文件，每一个cpp文件都会被单独编译，然后每一个cpp都会生成一个其对应的（vs生成的是.obj格式）文件。VS里面按ctrl + F7可以单独编译一个Cpp。</p>
+<h3 id="no3">No.3</h3>
+<p>什么是Translation Unit
+The text of the program is kept in units called source files in this International Standard. A source file together with all the headers (17.4.1.2) and source files included (16.2) via the preprocessing directive #include, less any source lines skipped by any of the conditional inclusion (16.1) preprocessing directives, is called a translation unit. [Note: a C++ program need not all be translated at the same time. ]
+举个例子：
+有两个cpp文件，它们互相不包含，互不关联，那么这是两个translation unit，每一个unit分别包含了其cpp文件和cpp文件包含的头文件，会生成两个.obj文件。
+如果两个cpp文件A和B, A中有这么一句代码#include “B.cpp”，尽管各自编译都能生成各自的.obj文件，那么这些加起来也只是一个translation unit，注意，在代码中不要写这种代码#include “B.cpp”，否则相当于把B的所有内容复制粘贴到了A中，再进行Link操作会出现函数重定义的问题，这也不是一个好的编码习惯。</p>
+<h3 id="no4">No.4</h3>
+<p>#include&lt;header.h&gt; 的底层实现原理
+实际上很简单，在预处理过程中，compiler会找到这个文件，然后把文件里面所有的内容复制粘贴到写了这一行代码的cpp中，所以#include&lt;&hellip;&gt;通常都写在前面，具体参见第五条。</p>
+<h3 id="no5">No.5</h3>
+<p>C++的预处理是怎么实现的
+生成预处理文件
+通过vs的项目属性参数的设置，可以把所有的预处理过程，也就是预处理后得到的新的cpp文件，将其输出到文件夹，可以在项目属性配置页面-&gt;预处理器-&gt;预处理到文件，选择“是&quot;，不会生成.obj文件，会生成一个.i文件。
+其实#include预处理执行只是预处理器先打开main.cpp，执行到#include&quot;test.h&quot;时，就直接把test.h文件里的内容搬过来，仅此而已，就是这么简单。</p>
+<h3 id="no6">No.6</h3>
+<p>C++生成的.obj文件
+前面提到过，每一个cpp文件在完成编译过程后，都会生成一个.obj文件，.obj文件是纯粹的2进制的机器语言，也就是Machine Code，纯粹的机器语言我们是无法阅读的，但通过VS2017，我们可以将.obj文件转换成一种汇编语言的.asm文件，可以通过阅读.asm文件来了解计算机具体干了什么。
+具体设置可以在项目属性配置页面-&gt;输出文件-&gt;ASM列表位置编译文件输出方式，从无列表改成仅有程序集的列表(/FA)。勾选之后，再编译文件，会在对应的路径生成对应的.asm文件（assembly），里面记载了程序生成的机器汇编语言，而且勾不勾选Promotion选项，是Debug和Release模式的重要差别之一，勾选了之后，会发现生成的.asm文件会自动对很多步骤进行优化，生成的指令集明显比不勾选生成的指令集内容要少，日后有兴趣可以仔细研究一下这块内容。</p>
+<h3 id="no7">No.7</h3>
+<p>Linker的作用有以下几点</p>
+<ul>
+<li>将所有的.obj文件合成起来，生成一个exe（即使只有一个.obj文件也需要Linker）</li>
+<li>需要通过Linker找到函数的入口</li>
+</ul>
+<p>C++程序默认的入口是main函数，当然可以在Visual Studio中自行设定入口函数：项目属性-&gt;连接器-&gt;高级-&gt;入口点去配置</p>
+<h3 id="no8">No.8</h3>
+<p>关于函数重定义
+当Linker把不同的.obj文件Link起来时，对于用到的函数，会去寻找其定义函数（Compiler只会查询有没有声明，不会管定义）。
+举个函数重定义的例子：
+在头文件里声明和定义了函数，然后两个或以上的cpp引用了该头文件。
+原因：因为头文件的引用，对其预处理相当于使用的复制粘贴，所以两个cpp都会包含相应的定义。解决办法有三种：</p>
+<ul>
+<li>第一种：将头文件的该函数，设置为static函数，这样每个使用它的cpp，函数的义范围就仅限于该cpp了。</li>
+<li>第二种：将头文件的该函数，设置为inline函数，这样实际上变成了预处理类似的式，不会再报错。</li>
+<li>第三种：也是最常用的一种，就是.h文件里面不实现函数定义，只包含函数声明，这样就把原来两个Translation Unit 变成了一个，两个CPP均有函数声明，但是共享一个函数定义</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Raveh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-02-20
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>
+          <a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/220221/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">C/C&#43;&#43;内存分配方式与存储区</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/220219/">
+            <span class="next-text nav-default">博客迁移到Hugo</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2007 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Raveh</span>
+  </span>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2e5c263af708c5658baf1e77f0cc0189";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
